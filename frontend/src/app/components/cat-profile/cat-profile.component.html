@@ -1,0 +1,9 @@
+<div>
+    <h1>Cat Profiles</h1>
+    <ul>
+        <li *ngFor="let cat of catProfiles">
+            <span>{{ cat.name }} (Age: {{ cat.age }})</span>
+            <button (click)="deleteCatProfile(cat.id)">Delete</button>
+        </li>
+    </ul>
+</div>

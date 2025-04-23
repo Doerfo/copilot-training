@@ -1,0 +1,9 @@
+<app-navbar (filterChanged)="filterCats($event)"></app-navbar>
+<div class="cat-profiles">
+  <div class="cat-card" *ngFor="let cat of filteredCatProfiles">
+    <img [src]="'https://cataas.com/cat?' + cat.id" alt="Random Cat" />
+    <h3>{{ cat.name }}</h3>
+    <p>Age: {{ cat.age }}</p>
+  </div>
+</div>
+<router-outlet></router-outlet>

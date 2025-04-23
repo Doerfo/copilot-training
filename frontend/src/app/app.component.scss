@@ -1,0 +1,28 @@
+/* Adjust image size for cat pictures */
+.cat-profiles .cat-card img {
+    width: 250px;
+    /* Increased size */
+    height: 250px;
+    /* Increased size */
+    object-fit: cover;
+}
+
+/* Update card styles to allow them to be next to each other */
+.cat-profiles {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    /* Add spacing between cards */
+}
+
+.cat-profiles .cat-card {
+    flex: 1 1 auto;
+    /* Allow cards to size according to their content */
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 0;
+    /* Remove margin to avoid double spacing */
+    padding: 16px;
+    text-align: center;
+}
