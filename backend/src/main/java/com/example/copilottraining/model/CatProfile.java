@@ -17,6 +17,19 @@ public class CatProfile {
     private String breed;
     private String description;
 
+    // No-argument constructor
+    public CatProfile() {
+    }
+
+    // Parameterized constructor
+    public CatProfile(Long id, String name, int age, String breed, String description) {
+        this.id = id;
+        this.name = name;
+        this.age = age;
+        this.breed = breed;
+        this.description = description;
+    }
+
     // Getters and Setters
     public Long getId() {
         return id;
